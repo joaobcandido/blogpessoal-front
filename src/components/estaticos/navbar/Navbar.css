@@ -1,0 +1,14 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.cursor{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 157, 9);
+    padding: 3px;
+    border-radius: 10px;
+    border: solid 1px rgb(5, 5, 5);
+   
+    
+}
