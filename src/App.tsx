@@ -47,11 +47,11 @@ function App() {
               <CadastroUsuario />
             </Route>
 
-            <Route path='/temas'>
+            <Route path='/ongs'>
               <ListaTema />
             </Route>
 
-            <Route path='/postagens'>
+            <Route path='/doacoes'>
               <ListaPostagem />
             </Route>
 
@@ -63,16 +63,16 @@ function App() {
               <ListaTemaDescricao />
             </Route>
 
-            <Route exact path='/formularioPostagem'>
+            <Route exact path='/formularioDoações'>
               <CadastroPostagem />
             </Route>
-            <Route exact path='/formularioPostagem/:id'>
+            <Route exact path='/formularioDoações/:id'>
               <CadastroPostagem />
             </Route>
-            <Route exact path='/formularioTema'>
+            <Route exact path='/formularioOng'>
               <CadastroTema />
             </Route>
-            <Route exact path='/formularioTema/:id'>
+            <Route exact path='/formularioOng/:id'>
               <CadastroTema />
             </Route>
             <Route path='/deletarPostagem/:id'>

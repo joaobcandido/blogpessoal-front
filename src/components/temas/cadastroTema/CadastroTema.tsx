@@ -19,7 +19,9 @@ function CadastroTema() {
 
     const [tema, setTema] = useState<Tema>({
         id: 0,
-        descrisao: ''
+        descricao: '',
+        valor: ''
+        
     })
 
     useEffect(() => {
@@ -108,14 +110,16 @@ function CadastroTema() {
     }
 
     function back() {
-        history.push('/temas')
+        history.push('/ongs')
     }
 
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descrisao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descrisao" label="descrisao" variant="outlined" name="descrisao" margin="normal" fullWidth />
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro Ongs</Typography>
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="nome da ong:" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <TextField value={tema.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="valor" label="endereço:" variant="outlined" name="valor" margin="normal" fullWidth />
+               
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

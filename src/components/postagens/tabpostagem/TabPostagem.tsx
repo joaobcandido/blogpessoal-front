@@ -16,7 +16,7 @@ function TabPostagem() {
       <TabContext value={value}>
         <AppBar position="static">
           <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1"/>
+            <Tab label="Todas as doações" value="1"/>
             <Tab label="Sobre-nós" value="2" />
           </Tabs>
         </AppBar>

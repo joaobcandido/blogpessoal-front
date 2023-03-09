@@ -56,22 +56,25 @@ function ListaPostagem() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  
-                </Typography >
-                <Typography variant="h5" component="h2">
-                 titulo:{post.titulo}
+                
+                <Typography variant="h3" component="h2">
+                 doador:   {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
-                  texto: {post.texto}
+                <Typography variant="h4" component="h2">
+                  tipo da doação:   {post.texto}
                 </Typography>
-                <Typography variant="body2" component="p">
-                 data: {post.data}
+                
+                <Typography variant="h4" component="p">
+                 nome da ong:   {post.tema?.descricao}
                 </Typography>
-                <Typography variant="body2" component="p">
-                 tema: {post.tema?.descrisao}
+                <Typography variant="h4" component="p">
+                 endereço da ong:   {post.tema?.valor}
+                </Typography>
+                <Typography variant="h5" component="p">
+                 data:   {post.data}
                 </Typography>
               </CardContent>
+              {/*
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={2}>
 
@@ -90,7 +93,7 @@ function ListaPostagem() {
                     </Box>
                   </Link>
                 </Box>
-              </CardActions>
+        </CardActions>*/}
             </Card>
           </Box>
         ))

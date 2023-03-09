@@ -55,12 +55,15 @@ function ListaTema() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Tema
-                </Typography>
+               
                 <Typography variant="h5" component="h2">
-                  {tema.descrisao}
+                 nome da ong: {tema.descricao}
                 </Typography>
+                
+                <Typography variant="h5" component="h2">
+                 endereço: {tema.valor}
+                </Typography>
+                
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >

@@ -53,14 +53,14 @@ function DeletarTema() {
   }
 
   function sim() {
-    history.push('/temas')
+    history.push('/ongs')
     deleteId(`/temas/${id}`, {
       headers: {
         'Authorization': token
       }
     });
     
-    toast.success('Tema deletado com sucesso', {
+    toast.success('ong deletada com sucesso', {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
@@ -73,7 +73,7 @@ function DeletarTema() {
   }
 
   function nao() {
-    history.push('/temas')
+    history.push('/ong')
   }
 
   return (
@@ -86,8 +86,9 @@ function DeletarTema() {
                 Deseja deletar o Tema:
               </Typography>
               <Typography color="textSecondary">
-                {tema?.descrisao}
+                {tema?.descricao}
               </Typography>
+              
             </Box>
           </CardContent>
           <CardActions>

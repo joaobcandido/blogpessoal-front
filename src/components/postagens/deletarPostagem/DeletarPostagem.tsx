@@ -58,7 +58,7 @@ function DeletarPostagem() {
         'Authorization': token
       }
     });
-    //alert('Postagem deletada com sucesso');
+    //alert('Doação deletada com sucesso');
     toast.success('Postagem deletada com sucesso', {
       position: "top-right",
       autoClose: 2000,

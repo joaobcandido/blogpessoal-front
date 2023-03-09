@@ -24,26 +24,19 @@ function Home() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={10}>
-                    <Box  alignItems="center"   paddingX={40} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"
-                         className='titulo'>Seja bem vindo(a) ao blog do joão !!!!</Typography>
-                       
-                    </Box>
-                    
-                   
-                </Grid>
+           
+               
                 
                 <Grid item xs={12} >
-                    <img src="https://www.atulhost.com/wp-content/uploads/2017/10/blog-1536x864.jpg" alt="" width="100%" height="30%" />
+                    <img src="https://www.thespruce.com/thmb/8oUcr_AtQAYom4jUpzDlxDKDAC4=/4495x3000/filters:fill(auto,1)/where-to-donate-everything-in-home-2648117_02-f88c1f8b70324c709dfbd8df9db217c0.jpg" alt="" width="100%" height="800px" />
+                   
+                    
                 </Grid>
-
                 
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
                 </Grid>
-            </Grid>
+            
         </>
     );
 }

@@ -96,7 +96,7 @@ function ListaPostagemTitulo() {
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.descrisao}
+                  {post.tema?.descricao}
                 </Typography>
               </CardContent>
               <CardActions>

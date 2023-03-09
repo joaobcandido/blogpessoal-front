@@ -14,6 +14,7 @@ function ListaPostagemDescricao() {
   //const [token, setToken] = useLocalStorage('token');
   let history = useHistory();
   const [descricao, setDescricao] = useState<string>("")
+ 
 
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
@@ -61,6 +62,7 @@ function ListaPostagemDescricao() {
     )
      
   }
+ 
 
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -71,6 +73,7 @@ function ListaPostagemDescricao() {
     <>
       <form action="" onSubmit={onSubmit}>
         <Box display="flex" justifyContent="center" marginTop={2} marginBottom={2} width="100%">
+          
           <TextField
             label="Descrição"
             id="descricao"
@@ -92,8 +95,9 @@ function ListaPostagemDescricao() {
                   Tema
                 </Typography>
                 <Typography variant="h5" component="h2">
-                  {tema.descrisao}
+                  {tema.descricao}
                 </Typography>
+               
               </CardContent>
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5} >

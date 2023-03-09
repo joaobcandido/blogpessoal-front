@@ -56,38 +56,38 @@ function Navbar() {
 
                     
 
-                    <Link to="/postagens" className="text-decorator-none">
+                    <Link to="/doacoes" className="text-decorator-none">
                         <Box mx={5} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                postagens
+                                doacoes
                             </Typography>
                         </Box>
                     </Link>
                     <Link to="/titulo" className="text-decorator-none">
                         <Box mx={5} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                postagens por título
+                                doações por título
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to="/temas" className="text-decorator-none">
+                    <Link to="/ongs" className="text-decorator-none">
                         <Box mx={5} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                temas
+                                ongs
                             </Typography>
                         </Box>
                     </Link>
                     <Link to="/descricao" className="text-decorator-none">
                         <Box mx={5} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                temas por descrição
+                                ongs por descrição
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to="/formularioTema" className="text-decorator-none">
+                    <Link to="/formularioOng" className="text-decorator-none">
                         <Box mx={5} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                cadastrar ong
                             </Typography>
                         </Box>
                     </Link>
